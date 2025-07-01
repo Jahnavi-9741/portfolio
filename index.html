@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gorantla Jahnavi Reddy | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #2C2C2C;
+      --accent: #D4AF37;
+      --text-light: #F9F6EF;
+      --muted-green: #3E7C59;
+      --card-bg: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--accent);
+      box-shadow: 0 0 20px var(--accent);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      margin-top: 10px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-top: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--muted-green);
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill-tag {
+      background: var(--accent);
+      color: var(--bg-dark);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .skill-tag:hover {
+      transform: scale(1.1);
+      background: var(--muted-green);
+      color: var(--text-light);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 2px solid var(--accent);
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s, border-color 0.3s;
+      color: var(--text-light);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--muted-green);
+    }
+
+    .project-card h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      margin-bottom: 10px;
+    }
+
+    .video-resume {
+      background: var(--accent);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: var(--bg-dark);
+    }
+
+    .video-resume a {
+      background: var(--bg-dark);
+      color: var(--accent);
+      padding: 10px 20px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .video-resume a:hover {
+      background: var(--muted-green);
+      color: var(--text-light);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <img src="passport.jpeg" alt="Jahnavi Photo">
+      <div>
+        <h1>Gorantla Jahnavi Reddy</h1>
+        <div class="subtitle">B.Tech CSE Student | Full Stack & AI Enthusiast</div>
+      </div>
+    </div>
+
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>
+        I’m a B.Tech Computer Science and Engineering student graduating in 2026 from Alliance University,
+        passionate about building innovative applications and exploring AI. I love transforming ideas into practical tech solutions
+        and constantly push myself through projects and competitive coding.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">Data Structures & Algorithms</div>
+        <div class="skill-tag">Operating Systems</div>
+        <div class="skill-tag">ML with Python</div>
+        <div class="skill-tag">DBMS</div>
+        <div class="skill-tag">Artificial Intelligence</div>
+        <div class="skill-tag">OOPS Concepts</div>
+        <div class="skill-tag">Web Development</div>
+        <div class="skill-tag">Gen AI</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">C</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">HTML/CSS</div>
+        <div class="skill-tag">MongoDB</div>
+        <div class="skill-tag">Flutter</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">VS Code</div>
+        <div class="skill-tag">Jupyter</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Mini Social Feed</h3>
+          <p>
+            A mini social media platform enabling users to post, view feeds, and manage content. Built with FastAPI, SQLAlchemy, HTML/CSS, and JS.
+          </p>
+          <ul>
+            <li>CRUD APIs with FastAPI</li>
+            <li>User authentication & sessions</li>
+            <li>Responsive frontend</li>
+            <li>Planned: likes, comments, profiles</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>AI Text Summarizer & Keyword Extractor</h3>
+          <p>
+            A smart PDF analysis tool extracting summaries and key terms using NLP. Built with Python, Flask, keyBERT, and PyMuPDF.
+          </p>
+          <ul>
+            <li>Uploads PDFs for analysis</li>
+            <li>Generates concise summaries</li>
+            <li>Highlights keywords for insights</li>
+            <li>Planned: sentiment analysis, DOCX support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-resume">
+      <h2>Video Resume</h2>
+      <p>Check out my video resume for an overview of my skills and projects.</p>
+      <a href="https://drive.google.com/file/d/12i2XCtWgIgZY18LE5sB4G6uQDSFAHFyU/view?usp=drive_link" target="_blank">
+        Watch Now
+      </a>
+    </section>
+  </div>
+</body>
+</html>
